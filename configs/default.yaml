@@ -1,0 +1,13 @@
+model_name: sshleifer/tiny-gpt2
+device: auto
+batch_sizes: [1, 2, 4]
+prompts:
+  - "Adaptive inference systems choose runtime settings based on workload signals."
+  - "Efficient language model serving requires latency, throughput, and memory trade-offs."
+optimization_targets: [balanced, latency, throughput, memory]
+memory_budget_mb: null
+generation:
+  max_new_tokens: 16
+  do_sample: false
+  temperature: 1.0
+  num_beams: 1

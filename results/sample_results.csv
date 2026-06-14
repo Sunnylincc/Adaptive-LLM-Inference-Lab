@@ -1,0 +1,7 @@
+model_name,device,inference_mode,prompt_length,output_length,batch_size,latency_seconds,tokens_per_second,peak_memory_mb,timestamp
+sshleifer/tiny-gpt2,cpu,baseline,12,16,1,0.85,18.82,95.0,2026-06-14T00:00:00+00:00
+sshleifer/tiny-gpt2,cpu,low_latency,12,8,1,0.38,21.05,82.0,2026-06-14T00:00:00+00:00
+sshleifer/tiny-gpt2,cpu,throughput,14,16,4,1.25,51.20,140.0,2026-06-14T00:00:00+00:00
+sshleifer/tiny-gpt2,cpu,memory_efficient,260,12,1,0.92,13.04,70.0,2026-06-14T00:00:00+00:00
+sshleifer/tiny-gpt2,cpu,adaptive:low_latency,12,8,1,0.40,20.00,83.0,2026-06-14T00:00:00+00:00
+sshleifer/tiny-gpt2,cpu,adaptive:throughput,14,16,4,1.10,58.18,138.0,2026-06-14T00:00:00+00:00

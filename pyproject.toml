@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adaptive-inference-lab"
+version = "0.1.0"
+description = "A lightweight research lab for adaptive inference policy benchmarking."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Adaptive Inference Lab Contributors"}]
+dependencies = [
+  "torch>=2.1",
+  "transformers>=4.40",
+  "pyyaml>=6.0",
+  "pandas>=2.0",
+  "matplotlib>=3.7",
+  "psutil>=5.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
